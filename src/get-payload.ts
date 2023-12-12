@@ -30,6 +30,7 @@ if (!cached) {
 interface Args {
   initOptions?: Partial<InitOptions>;
 }
+
 export const getPayloadClient = async ({
   initOptions,
 }: Args = {}): Promise<Payload> => {
@@ -45,8 +46,8 @@ export const getPayloadClient = async ({
     cached.promise = payload.init({
       email: {
         transport: transporter,
-        fromAddress: "onboarding@resend.dev",
-        fromName: "iPlace",
+        fromAddress: "hello@joshtriedcoding.com",
+        fromName: "DigitalHippo",
       },
       secret: process.env.PAYLOAD_SECRET,
       local: initOptions?.express ? false : true,
