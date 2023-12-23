@@ -12,7 +12,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   TAuthCredentialsValidator,
   AuthCredentialsValidator,
-} from "@/lib/valitators/account-credentials-validator";
+} from "@/lib/validators/account-credentials-validator";
 import { trpc } from "@/trpc/client";
 import { toast } from "sonner";
 import { ZodError } from "zod";
