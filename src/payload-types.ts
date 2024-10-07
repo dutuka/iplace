@@ -18,8 +18,19 @@ export interface Config {
   };
   globals: {};
 }
+<<<<<<< HEAD
 export interface User {
   id: string;
+=======
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users".
+ */
+export interface User {
+  id: string;
+  products?: (string | Product)[] | null;
+  product_files?: (string | ProductFile)[] | null;
+>>>>>>> master
   role: 'admin' | 'user';
   updatedAt: string;
   createdAt: string;
@@ -34,6 +45,13 @@ export interface User {
   lockUntil?: string | null;
   password: string | null;
 }
+<<<<<<< HEAD
+=======
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "products".
+ */
+>>>>>>> master
 export interface Product {
   id: string;
   user?: (string | null) | User;
@@ -52,6 +70,13 @@ export interface Product {
   updatedAt: string;
   createdAt: string;
 }
+<<<<<<< HEAD
+=======
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "product_files".
+ */
+>>>>>>> master
 export interface ProductFile {
   id: string;
   user?: (string | null) | User;
@@ -63,7 +88,17 @@ export interface ProductFile {
   filesize?: number | null;
   width?: number | null;
   height?: number | null;
+<<<<<<< HEAD
 }
+=======
+  focalX?: number | null;
+  focalY?: number | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media".
+ */
+>>>>>>> master
 export interface Media {
   id: string;
   user?: (string | null) | User;
@@ -75,6 +110,11 @@ export interface Media {
   filesize?: number | null;
   width?: number | null;
   height?: number | null;
+<<<<<<< HEAD
+=======
+  focalX?: number | null;
+  focalY?: number | null;
+>>>>>>> master
   sizes?: {
     thumbnail?: {
       url?: string | null;
@@ -102,6 +142,13 @@ export interface Media {
     };
   };
 }
+<<<<<<< HEAD
+=======
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "orders".
+ */
+>>>>>>> master
 export interface Order {
   id: string;
   _isPaid: boolean;
@@ -110,6 +157,13 @@ export interface Order {
   updatedAt: string;
   createdAt: string;
 }
+<<<<<<< HEAD
+=======
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-preferences".
+ */
+>>>>>>> master
 export interface PayloadPreference {
   id: string;
   user: {
@@ -129,6 +183,13 @@ export interface PayloadPreference {
   updatedAt: string;
   createdAt: string;
 }
+<<<<<<< HEAD
+=======
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-migrations".
+ */
+>>>>>>> master
 export interface PayloadMigration {
   id: string;
   name?: string | null;

@@ -56,6 +56,10 @@ const Page = () => {
       }
 
       router.push("/");
+<<<<<<< HEAD
+=======
+      router.refresh()
+>>>>>>> master
     },
     onError: (err) => {
       if (err.data?.code === "UNAUTHORIZED") {
@@ -96,6 +100,10 @@ const Page = () => {
                   <Label htmlFor="email">eMail</Label>
                   <Input
                     {...register("email")}
+<<<<<<< HEAD
+=======
+                    id="email"
+>>>>>>> master
                     className={cn({
                       "focus-visible:ring-red-500": errors.email,
                     })}
@@ -111,6 +119,10 @@ const Page = () => {
                   <Label htmlFor="password">Password</Label>
                   <Input
                     {...register("password")}
+<<<<<<< HEAD
+=======
+                    id="password"
+>>>>>>> master
                     type="password"
                     className={cn({
                       "focus-visible:ring-red-500": errors.password,

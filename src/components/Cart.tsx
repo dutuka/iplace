@@ -16,7 +16,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@/hooks/use-cart";
 import { ScrollArea } from "./ui/scroll-area";
+<<<<<<< HEAD
 import CartItem from "./ui/CartItem";
+=======
+import CartItem from "./CartItem";
+>>>>>>> master
 import { useEffect, useState } from "react";
 
 const Cart = () => {
@@ -117,4 +121,8 @@ const Cart = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Cart;
+=======
+export default Cart;
+>>>>>>> master

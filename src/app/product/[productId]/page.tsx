@@ -155,4 +155,8 @@ const Page = async ({ params }: PageProps) => {
   )
 }
 
+<<<<<<< HEAD
 export default Page
+=======
+export default Page
+>>>>>>> master
